@@ -1,0 +1,35 @@
+mongodb installation
+
+1. download extension from
+https://pecl.php.net/package/mongodb
+select thread safe(TS) x64
+
+
+2. copy file php_mongodb.dll to C:\xampp\php\ext
+
+3. add extention=php_mongodb.dll to php.ini
+
+4. terminal : composer require jenssegers/mongodb --ignore-platform-reqs //กันเหนียว
+
+5 .env file
+    DB_CONNECTION=mongodb
+    DB_HOST=cluster0.h4ueo.mongodb.net
+    DB_PORT=27017
+    DB_DATABASE=miho_archive
+    DB_USERNAME=warangkana.kh@kkumail.com
+    DB_PASSWORD=Sadaharu123
+5. database.php
+    add 
+    
+    'mongodb' => [
+            'driver' => 'mongodb',
+            'dsn' => env('DB_URI', 'mongodb+srv://warangkana_kh:Sadaharu123@cluster0.h4ueo.mongodb.net/miho_archive?retryWrites=true&w=majority'),
+            'database' => 'miho_archive',
+    ]
+
+    to connection
+
+    and 'default' => env('DB_CONNECTION', 'mongodb'),
+
+
+    https://github.com/jenssegers/laravel-mongodb

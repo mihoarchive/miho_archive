@@ -1,0 +1,193 @@
+
+
+.header {
+    padding-top:20px;
+    text-align: center; 
+    color: #7cd7e7;
+    font-size: 30px;
+    }
+
+body{
+    background-color: azure;
+}
+.content {
+    padding: 10px;
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    
+}
+
+
+.menu {
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    
+    
+}
+
+
+
+.menu li a{
+    text-decoration: none;
+    color:#7C90DB;
+    ;
+}
+.menu li a:hover{
+    color: #F5A65B;
+}
+
+.menu li{
+    font-size: 22px;
+    padding:20px;
+}
+
+.seperator {
+    padding-bottom: 50px;
+    
+}
+
+.seperator .dashed{
+    border-top: 3px solid #FFBC42;
+    margin:auto;
+    max-width: 500px;
+}
+
+
+
+li {
+    display: inline-block;
+    font-size: 18px;
+}
+
+
+.logo{
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+    }
+
+    
+
+.blogarticle{
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 10%;
+    
+}
+.c-blog-article__text img {
+    border: 0 none;
+    vertical-align: top;
+    width: 70%;
+    height: 70%;
+    margin: 0;
+}
+
+
+.blogtitle{
+    padding: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+}
+.blogdatetime{
+    padding: 10px;
+    text-align: center;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(/font/GenRegular.ttf);
+  }
+  div{
+    font-family: myFirstFont;
+}
+.p{
+    font-family: myFirstFont;
+    font-size: 24px;
+}
+
+
+
+.fixed_img_col ul{
+    margin:auto;
+	padding: 0;
+	}
+
+.fixed_img_col ul:after{
+	display:block;
+	clear:both;
+	content:""}
+
+.fixed_img_col li{
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+
+.fixed_img_col li:hover{
+    opacity: 0.5;
+    cursor: pointer;
+
+     
+}
+
+.fixed_img_col .thumb{
+    width:320px;
+}
+
+.fixed_img_col .thumb img{
+    display: block;
+    opacity: 0.7;
+	width:320px;
+	height:320px;
+    object-fit:cover;
+
+
+}
+
+
+.fixed_img_col .li .headblog{
+    text-align: center;
+    margin-bottom: 5px;
+}
+li .headblog .title {
+        line-break: auto;
+        font-size: 12px;
+       
+}
+
+li .headblog .datetime {
+    line-break: auto;
+    font-size: 12px;
+   
+}
+
+
+
+.pagination{
+    display : flex; 
+    justify-content :center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.pagination a{
+    color: #7C90DB;
+
+}
+
+
+.footer{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.footer .foot-text{
+    font-size: 14px;
+    color: #7C90DB;
+}

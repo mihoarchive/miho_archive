@@ -1,0 +1,50 @@
+header {
+    width: 1000px;
+    text-align: left;
+    background-color: #fff;
+    background-image: url('/img/bg.jpg');
+}
+.logo {
+    height: 500px;
+    text-align: center;
+    
+}
+
+body {
+    font: 12px 'Malgun Gothic', 'Tahoma', sans-serif;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    line-height: 180%;
+
+}
+.navbar {
+    width: 1000px;
+    height: 62px;
+    border-bottom: solid #e5e5e5 1px;
+    text-align: center;
+}
+
+.menubar {
+    width: 1000px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #fff;
+}
+
+content {
+    width: 1000px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #fff;
+}
+.contents {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#hr {
+    width: 1000px;
+    margin: 0 auto;
+}
