@@ -23,7 +23,7 @@
             </li>
 
             <li>
-              <a href = "/blog"> SNS   </a>
+              <a href = "/blog"> SEARCH  </a>
             </li>
 
           </ul>
@@ -35,22 +35,46 @@
           </div>
         
           <div class = content>
+          <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
           
+          <div class = "nextpage"> <a href ="/blog/blog<?php echo $nextblog?>">next blog </a> </div>
 
             @foreach ($blogs as $blog)
             <div class="blogtitle">{{ $blog->title }}</div>
             <div class="blogdatetime">{{ $blog->datetime }}</div>
             <div class="blogarticle"><?php echo $blog->article_img_link_str  ?></div>
-            
-
             @endforeach
 
+           <div class = "nextpage"> <a href ="/blog/blog<?php echo $nextblog?>">next blog </a> </div>
+         
+            <script>
+                //Get the button
+                var mybutton = document.getElementById("myBtn");
+
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function() {scrollFunction()};
+
+                function scrollFunction() {
+                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                  } else {
+                    mybutton.style.display = "none";
+                  }
+                }
+
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+                }
+            </script>
+        
         </div>
 
           <div class = "footer">
             <div class = "foot-text">SUNSHINE DAY</div>
           </div>
-
+          
         </body>
         </html>
                 

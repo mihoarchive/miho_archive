@@ -50,22 +50,30 @@ class BlogController extends Controller
     public function individual_blog($id){
         $blog_id = (string)$id;
         $blogs = BlogModel::where('blog_id',$blog_id)->get();
-        return view('blog',['blogs'=>$blogs]);
+        $split_text = explode("blog",$id);
+        $nextblog = (int)$split_text[1] + 1;
+        $nextblog = sprintf("%03d",$nextblog);
+        return view('blog',['blogs'=>$blogs],['nextblog'=>$nextblog]);
+    }
+    public function edit_blog($id){
+        $blog_id = (string)$id;
+        $blog = BlogModel::where('blog_id',$blog_id)->get();
+        return view('edit_blog',['blogs'=>$blogs]);
     }
     
     public function blog_page(){
-        $show_blog = BlogModel::select('blog_id','datetime','title')->paginate(509);
+        $show_blog = BlogModel::select('blog_id','datetime','title')->orderBy('date','desc')->paginate(9);
         Paginator::useBootstrap();
         $year_range = $this->yearRange();
         return view('mainblog', ['blogs'=>$show_blog],['years'=>$year_range]);
     }
 
-
-
-
-
-
-
+    public function searchBlog(){
+        $search_keyword = $_GET['search'];
+        $get_blog = BlogModel::select('blog_id','datetime','title')->where('title','LIKE','%'.$search_keyword.'%')->orWhere('datetime','LIKE','%'.$search_keyword.'%')->orWhere('article_str','LIKE','%'.$search_keyword.'%')->orderBy('date','desc')->get();
+ 
+        return view('found',['blogs'=>$get_blog]);
+    }
 
 
 

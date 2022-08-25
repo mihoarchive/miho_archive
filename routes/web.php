@@ -18,8 +18,16 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/editblog/{id}','App\Http\Controllers\BlogController@edit_blog');
+
 Route::get('/blog','App\Http\Controllers\BlogController@blog_page');
 
 Route::get('/blog/{id}', 'App\Http\Controllers\BlogController@individual_blog');
 
-Route::get('/{year}', 'App\Http\Controllers\BlogController@yearSelected');
+Route::get('blog/{year}', 'App\Http\Controllers\BlogController@yearSelected');
+
+Route::get('/search', function () {
+    return view('search');
+});
+
+Route::get('/found','App\Http\Controllers\BlogController@searchBlog');

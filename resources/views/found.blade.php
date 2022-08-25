@@ -40,13 +40,20 @@
         </div>
         <div class = content>
         
+        <div class = "search-area">
+        <form class="form-inline my-2 my-lg-0" type ="get" action="{{ url('/found')}}">
+      <input class="form-control mr-sm-2" name='search' type="search" placeholder="Search" aria-label="Search" required>
+      <button class="btn btn-outline-primary" type="submit">Search</button>
+    
+        </form>
 
+        </div>
+
+        <div class = found-text> <?php echo "found : " . count($blogs) . ' blogs' ?> </div>
+
+        
           
-
-
-
-
-         <div class = "fixed_img_col">
+        <div class = "fixed_img_col">
             <ul>
             @foreach ($blogs as $blog)
               <li class="odd">
@@ -78,15 +85,14 @@
 
         
 
-          <div class="pagination">
-          {!!  $blogs->links() !!}
-          </div> 
+          
           
         </div>
 
         <div class = "footer">
           <div class = "foot-text">SUNSHINE DAY</div>
         </div>
+      
 
         </body>
         </html>

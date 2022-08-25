@@ -40,53 +40,17 @@
         </div>
         <div class = content>
         
+        <div class = "search-area">
+        <form class="form-inline my-2 my-lg-0" type ="get" action="{{ url('/found')}}">
+      <input class="form-control mr-sm-2" name='search' type="search" placeholder="Search" aria-label="Search" required>
+      <button class="btn btn-outline-primary" type="submit">Search</button>
+    
+        </form>
 
-          
-
-
-
-
-         <div class = "fixed_img_col">
-            <ul>
-            @foreach ($blogs as $blog)
-              <li class="odd">
-              
-              <div class = "thumb">
-              <div class = "headblog">
-                <div class="title"> <?php echo $blog->title; ?></div>
-                <div class="datetime"> <?php echo $blog->datetime; ?></div>
-              </div>
-                <a href="/blog/<?php echo $blog->blog_id; ?>"> 
-                  <img  class ="preview" src = "<?php 
-                    $blog_id = $blog->blog_id;
-                    $blog_id = $blog_id."_img0";
-                   $path = "https://res.cloudinary.com/dhjnjuiff/image/upload/v1/blog_archive/".$blog_id; 
-                  echo $path; ?>">  
-                  </img>   
-              </a>
-            </div>
-            
-              </li>
-              @endforeach
-            </ul>
-          </div>
-       
-
-         
-
-         
-
-        
-
-          <div class="pagination">
-          {!!  $blogs->links() !!}
-          </div> 
-          
         </div>
-
-        <div class = "footer">
-          <div class = "foot-text">SUNSHINE DAY</div>
-        </div>
+          
+    
+      
 
         </body>
         </html>
