@@ -37,7 +37,7 @@
           <div class = content>
           <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
           
-          <div class = "nextpage"> <a href ="/blog/blog<?php echo $nextblog?>">next blog </a> </div>
+          <!-- <div class = "nextpage"> <a href ="/blog/blog<?php echo $nextblog?>">next blog </a> </div> -->
 
             @foreach ($blogs as $blog)
             <div class="blogtitle">{{ $blog->title }}</div>
