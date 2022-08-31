@@ -39,11 +39,7 @@
           
           <!-- <div class = "nextpage"> <a href ="/blog/blog<?php echo $nextblog?>">next blog </a> </div> -->
 
-            @foreach ($blogs as $blog)
-            <div class="blogtitle">{{ $blog->title }}</div>
-            <div class="blogdatetime">{{ $blog->datetime }}</div>
-            <div class="blogarticle"><?php echo $blog->article_img_link_str  ?></div>
-            @endforeach
+            SOON
 
            <!-- <div class = "nextpage"> <a href ="/blog/blog<?php echo $nextblog?>">next blog </a> </div> -->
          

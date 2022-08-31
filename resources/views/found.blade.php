@@ -20,11 +20,11 @@
           </li>
 
           <li>
-            <a href = "/blog"> HISTORY   </a>
+            <a href = "/history"> HISTORY   </a>
           </li>
           
           <li>
-            <a href = "/blog"> PROFILE   </a>
+            <a href = "/profile"> PROFILE   </a>
           </li>
 
           <li>

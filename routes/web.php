@@ -14,6 +14,14 @@ use App\Http\BlogController;
 |
 */
 
+Route::get('/history', function () {
+    return view('history');
+});
+
+Route::get('/profile', function () {
+    return view('profile');
+});
+
 Route::get('/','App\Http\Controllers\BlogController@blog_page');
 
 Route::get('/editblog/{id}','App\Http\Controllers\BlogController@edit_blog');
