@@ -14,9 +14,7 @@ use App\Http\BlogController;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/','App\Http\Controllers\BlogController@blog_page');
 
 Route::get('/editblog/{id}','App\Http\Controllers\BlogController@edit_blog');
 
