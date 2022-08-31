@@ -45,7 +45,7 @@
             <div class="blogarticle"><?php echo $blog->article_img_link_str  ?></div>
             @endforeach
 
-           <div class = "nextpage"> <a href ="/blog/blog<?php echo $nextblog?>">next blog </a> </div>
+           <!-- <div class = "nextpage"> <a href ="/blog/blog<?php echo $nextblog?>">next blog </a> </div> -->
          
             <script>
                 //Get the button
