@@ -45,12 +45,13 @@ body{
 }
 
 .seperator {
-    padding-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     
 }
 
 .seperator .dashed{
-    border-top: 3px solid #FFBC42;
+    border-top: 3px solid azure;
     margin:auto;
     max-width: 500px;
 }
