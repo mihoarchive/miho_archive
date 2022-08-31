@@ -62,7 +62,7 @@ class BlogController extends Controller
     }
     
     public function blog_page(){
-        $show_blog = BlogModel::select('blog_id','datetime','title')->orderBy('date','desc')->paginate(9);
+        $show_blog = BlogModel::select('blog_id','datetime','title')->paginate(9);
         Paginator::useBootstrap();
         $year_range = $this->yearRange();
         return view('mainblog', ['blogs'=>$show_blog],['years'=>$year_range]);
