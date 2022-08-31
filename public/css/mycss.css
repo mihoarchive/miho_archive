@@ -3,8 +3,9 @@
 .header {
     padding-top:20px;
     text-align: center; 
-    color: #7cd7e7;
+    color: white;
     font-size: 30px;
+    
     }
 
 body{
@@ -24,6 +25,8 @@ body{
     max-width: 1000px;
     margin: auto;
     padding: 10px;
+    background-color: white;
+    
     
     
 }
